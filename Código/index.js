@@ -12,7 +12,7 @@ async function getAPI() {
 getAPI()
 
 let select = document.getElementById("users")
-let spans = document.querySelector('span')
+let spans = document.querySelectorAll('span')
 
 function userSelection(data){
     
@@ -28,9 +28,13 @@ function userSelection(data){
 function handleSelectionChange(data){
 
     select.addEventListener('change', () => {
-        console.log(select.value)
-        //let findData = data.find(item => item.name === select.value)
-        //spans[0].textContent = findData.id
+        let findData = data.find(item => item.name === select.value)
+        spans[0].textContent = findData.id
+        spans[1].textContent = findData.username
+        spans[2].textContent = findData.email
+        spans[3].textContent = findData.phone
+        spans[4].textContent = findData.website
+        spans[5].textContent = findData.company.name
     })
 }
 
