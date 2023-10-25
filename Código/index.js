@@ -22,6 +22,17 @@ function userSelection(data){
         select.appendChild(option)
     })
 
+    spans[0].textContent = data[0].id
+    spans[1].textContent = data[0].username
+    spans[2].textContent = data[0].email
+    spans[3].textContent = data[0].phone
+    spans[4].textContent = data[0].website
+    spans[5].textContent = data[0].company.name
+
+    spans.forEach((item) => {
+        item.style.color = "red"
+    })
+
     handleSelectionChange(data)
 }
 

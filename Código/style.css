@@ -38,3 +38,7 @@
         flex-direction: column;
     }
 }
+
+body {
+    background-color: #a1ebe9;
+}
