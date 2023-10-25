@@ -1,0 +1,40 @@
+#title{
+    font-family: monospace;
+    font-size: 3rem;
+    text-align: center;
+}
+
+#all{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#users{
+    border-radius: 5px;
+    padding: 0.3rem;
+    margin: 16px;
+}
+
+#data1{
+    font-family: monospace;
+    font-size: 0.9rem;
+    padding: 8px;
+}
+
+#data2{
+    font-family: monospace;
+    font-size: 1.3rem;
+    padding: 8px;
+}
+
+@media screen and (max-width: 600px){
+    #data1{
+        display: flex;
+        flex-direction: column;
+    }
+    #data2{
+        display: flex;
+        flex-direction: column;
+    }
+}
